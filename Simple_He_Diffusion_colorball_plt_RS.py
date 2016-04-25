@@ -40,6 +40,8 @@ dttheory = (dr**2)/(2*D*a**2)     # Max. time step for stability [s]
 dt = 10**6                        # Actual time step [s], approx. 30 yrs
 if dttheory<=dt:                  # Check if dt is too small and poss. print
     print('Unstable code. Time step too large')
+    print('Your time step (dt) is:' + str(dt) + '. It should be less than:' + \
+    str(dttheory))    
     
 """
 Loop
